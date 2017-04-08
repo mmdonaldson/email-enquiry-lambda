@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "email-enquiry-lambda-executor",
+    "name": "email-enquiry-lambda",
+    "region": "ap-southeast-2"
+  },
+  "api": {
+    "id": "9d95h8bmd2",
+    "module": "index"
+  }
+}

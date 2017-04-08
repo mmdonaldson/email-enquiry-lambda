@@ -1,0 +1,16 @@
+{
+  "name": "email-enquiry-lambda",
+  "version": "1.0.0",
+  "description": "Endpoint for my personal contact forms",
+  "main": "index.js",
+  "scripts": {
+    "start": "claudia create --name email-enquiry-lambda --region ap-southeast-2 --api-module index",
+    "deploy": "claudia update"
+  },
+  "author": "Mitchell Donaldson",
+  "dependencies": {
+    "aws-sdk": "^2.19.0",
+    "claudia-api-builder": "^2.4.0",
+    "nodemailer": "^2.6.4"
+  }
+}
