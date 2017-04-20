@@ -4,13 +4,16 @@
   "description": "Endpoint for my personal contact forms",
   "main": "index.js",
   "scripts": {
-    "start": "claudia create --name email-enquiry-lambda --region ap-southeast-2 --api-module index",
-    "deploy": "claudia update"
+    "start": "claudia create --name email-enquiry --region ap-southeast-2 --api-module index --policies policies --configure-db",
+    "deploy": "claudia update",
+    "reconfigure": "claudia update --configure-db"
   },
   "author": "Mitchell Donaldson",
   "dependencies": {
     "aws-sdk": "^2.19.0",
     "claudia-api-builder": "^2.4.0",
-    "nodemailer": "^2.6.4"
+    "nodemailer": "^2.6.4",
+    "querystring": "^0.2.0",
+    "shortid": "^2.2.8"
   }
 }
