@@ -52,7 +52,6 @@ api.post('/contact', (request) => {
 		.then(function () {
 			var dynamoPromise = dynamoDb.put(params).promise()
 			return dynamoPromise.then(function (response) {
-				console.log(response);
 				return;
 			})
 			.catch(function (error) {
