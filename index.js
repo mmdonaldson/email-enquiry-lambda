@@ -55,7 +55,6 @@ api.post('/contact', (request) => {
 				return;
 			})
 			.catch(function (error) {
-				console.log(error);
 				throw error;
 			})
 		})
@@ -63,7 +62,6 @@ api.post('/contact', (request) => {
 			return new api.ApiResponse('OK', {'Content-Type': 'text/plain'}, 200);
 		})
 		.catch(function (error) {
-			console.log('error: ', error);
 			return new api.ApiResponse({ error }, {'Content-Type': 'text/plain'}, 400);
 		});
 });
